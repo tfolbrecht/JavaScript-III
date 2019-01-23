@@ -81,17 +81,17 @@ Humanoid.prototype.greet = function() {
 */
 
 // Test you work by un-commenting these 3 objects and the list of console logs below:
-
+// fantasynamegenerators.com
 
   const mage = new Humanoid({
-    createdAt: new Date(),
+    createdAt: new Date(), // returns date object, not string
     dimensions: {
       length: 2,
       width: 1,
       height: 1,
     },
-    healthPoints: 5,
-    name: 'Bruce',
+    healthPoints: 45,
+    name: 'Algar',
     team: 'Mage Guild',
     weapons: [
       'Staff of Shamalama',
@@ -106,11 +106,11 @@ Humanoid.prototype.greet = function() {
       width: 2,
       height: 2,
     },
-    healthPoints: 15,
-    name: 'Sir Mustachio',
+    healthPoints: 75,
+    name: 'Winchelll',
     team: 'The Round Table',
     weapons: [
-      'Giant Sword',
+      'Long Sword',
       'Shield',
     ],
     language: 'Common Tongue',
@@ -123,19 +123,19 @@ Humanoid.prototype.greet = function() {
       width: 2,
       height: 4,
     },
-    healthPoints: 10,
-    name: 'Lilith',
+    healthPoints: 66,
+    name: 'Kiya', 
     team: 'Forest Kingdom',
     weapons: [
       'Bow',
       'Dagger',
     ],
-    language: 'Elvish',
+    language: ' Ælvißh',
   });
 
   console.log(mage.createdAt); // Today's date
   console.log(archer.dimensions); // { length: 1, width: 2, height: 4 }
-  console.log(swordsman.healthPoints); // 15
+  console.log(swordsman.healthPoints); // 75
   console.log(mage.name); // Bruce
   console.log(swordsman.team); // The Round Table
   console.log(mage.weapons); // Staff of Shamalama
@@ -147,5 +147,9 @@ Humanoid.prototype.greet = function() {
 
   // Stretch task: 
   // * Create Villain and Hero constructor functions that inherit from the Humanoid constructor function.  
+  // 
+
   // * Give the Hero and Villains different methods that could be used to remove health points from objects which could result in destruction if health gets to 0 or drops below 0;
+  // healthpoints =< 0, .destroy()
+
   // * Create two new objects, one a villain and one a hero and fight it out with methods!
